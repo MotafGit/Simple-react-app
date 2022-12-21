@@ -1,11 +1,7 @@
 {
   "books": [
     {
-      "title": "Harry Potter",
-      "id": 1
-    },
-    {
-      "title": "Random",
+      "title": "",
       "id": 2
     }
   ]

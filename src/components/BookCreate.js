@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import BooksContext from '../context/books';
-
+import Button from '../Button';
 
 function BookCreate() {
 
@@ -19,12 +19,12 @@ function BookCreate() {
   };
 
   return (
-    <div >
+    <div className="text-2xl" >
       <h3>add a book</h3>
       <form onSubmit= {handleSubmit}>
-        <label>Title</label>
-        <input value ={title} onChange ={handleChange} />
-        <button  >Create! </button> 
+        <button primary>Title</button>
+        <input  value ={title} onChange ={handleChange} />
+        <Button primary >Create! </Button> 
       </form>
     </div>
   );
