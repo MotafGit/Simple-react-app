@@ -24,28 +24,29 @@ const {deleteBook} = useContext(BooksContext);
     
   };
 
-  let content = <h3>{book.title}</h3>;
+  let content = book.title;
   if (showEdit){
     content = <BookEdit onSubmit= {handleSubmit} book={book} />;
   }
 
 
   return (
-  <div className ="container">
-      <img className='max-w-full'
-        alt ="books"
-        src ={`https://picsum.photos/seed/${book.id}300/200`}
-      />
-        <div >{content}</div>
-        <div className = "topRight">
-          <button  onClick = {handleEdit}>
-            <TiEdit/>
-          </button>
-          <button  onClick = {handleDeleteclick}>
-          <TiDeleteOutline/>
-          </button>
+    
+    <div className ="container"  >
+        <img className='max-w-full'
+          alt ="books"
+          src ={`https://picsum.photos/seed/${book.id}300/200`}
+        />
+          <div className='text-center' >{content}</div>
+          <div className = "topRight">
+            <button  onClick = {handleEdit}>
+              <TiEdit/>
+            </button>
+            <button  onClick = {handleDeleteclick}>
+            <TiDeleteOutline/>
+            </button>
 
-        </div>
+          </div>
      
 
      </div>);

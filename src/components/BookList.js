@@ -12,7 +12,7 @@ function BookList() {
     
   });
 
-  return <div >
+  return <div className= "bg-gray-400 columns-3">
 
     {renderBooks}
     </div>;

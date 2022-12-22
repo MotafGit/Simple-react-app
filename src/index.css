@@ -16,3 +16,9 @@ input {
     top: 2px;
     right: 6px;
 }
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}

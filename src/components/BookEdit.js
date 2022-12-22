@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import BooksContext from "../context/books";
+import Button from "../Button";
 
 function BookEdit({book, onEdit, onSubmit}) {
 
@@ -22,9 +23,9 @@ function BookEdit({book, onEdit, onSubmit}) {
   return <form onSubmit={handleSubmit}>
       <label>Title</label>
       <input value={title} onChange={handleChange}  />
-      <button >
+      <Button square className ="bg-green-600">
         Save
-      </button>
+      </Button>
 
   </form>
 
