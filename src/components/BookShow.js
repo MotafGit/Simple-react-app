@@ -1,6 +1,9 @@
 import { useState, useContext } from 'react';
 import BookEdit from './BookEdit';
 import BooksContext from '../context/books';
+import Button from '../Button';
+import { TiEdit } from "react-icons/ti";
+import { TiDeleteOutline } from "react-icons/ti";
 
 function BookShow({book}) {
 
@@ -28,18 +31,18 @@ const {deleteBook} = useContext(BooksContext);
 
 
   return (
-  <div >
-      <img
+  <div className ="container">
+      <img className='max-w-full'
         alt ="books"
         src ={`https://picsum.photos/seed/${book.id}300/200`}
       />
-        <div>{content}</div>
-        <div >
+        <div >{content}</div>
+        <div className = "topRight">
           <button  onClick = {handleEdit}>
-            Edit
+            <TiEdit/>
           </button>
           <button  onClick = {handleDeleteclick}>
-            Delete
+          <TiDeleteOutline/>
           </button>
 
         </div>

@@ -19,12 +19,12 @@ function BookCreate() {
   };
 
   return (
-    <div className="text-2xl" >
-      <h3>add a book</h3>
+    <div className=" bg-green-200 absolute inset-x-0 bottom-0" >
+      <h3 className="mb-3 ml-3">add a book:</h3>
       <form onSubmit= {handleSubmit}>
-        <button primary>Title</button>
+        <div className="mb-8 ml-3" >Title
         <input  value ={title} onChange ={handleChange} />
-        <Button primary >Create! </Button> 
+        <Button primary>Create! </Button> </div>
       </form>
     </div>
   );

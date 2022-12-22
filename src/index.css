@@ -5,3 +5,14 @@
 input {
     border: 1px solid black;
 }
+
+.container {
+    position: relative;
+    width: 200px;
+}
+
+.topRight {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+}

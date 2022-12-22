@@ -5,7 +5,7 @@ function Button ({
     primary,
     ...rest
 }) {
-    const classes = className(rest.className, 'flex items-center px-3 py-1.5 border', {
+    const classes = className(rest.className, '', {
         'border-black-500 bg-blue-500 text-white rounded-full': primary,
 
     });
