@@ -12,8 +12,8 @@ function Provider({children}) {
       setBooks (response.data);
     };
 
-    const editBookID = async (id,newTitle) => {
-        const response = await axios.put(`http://localhost:3001/books/${id}`, {title:newTitle});
+    const editBookID = async (id,newTitle,newGenre) => {
+        const response = await axios.put(`http://localhost:3001/books/${id}`, {title:newTitle, genre:newGenre});
      
         console.log (response);
          const updatedBooks = books.map((book) => {
@@ -37,9 +37,10 @@ function Provider({children}) {
      
        };
      
-       const handlecreateBook = async (title) => {
+       const handlecreateBook = async (title, genre) => {
           const response = await axios.post ('http://localhost:3001/books', {
-          title
+          title,
+          genre
      
          });
      

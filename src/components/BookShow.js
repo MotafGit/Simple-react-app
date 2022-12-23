@@ -1,7 +1,6 @@
 import { useState, useContext } from 'react';
 import BookEdit from './BookEdit';
 import BooksContext from '../context/books';
-import Button from '../Button';
 import { TiEdit } from "react-icons/ti";
 import { TiDeleteOutline } from "react-icons/ti";
 
