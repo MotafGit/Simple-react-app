@@ -37,13 +37,13 @@ const {deleteBook} = useContext(BooksContext);
           alt ="books"
           src ={`https://picsum.photos/seed/${book.id}300/200`}
         />
-          <div className='text-center' >{content}</div>
+          <div className='text-center bg-yellow-100' >{content}</div>
           <div className = "topRight">
             <button  onClick = {handleEdit}>
               <TiEdit/>
             </button>
             <button  onClick = {handleDeleteclick}>
-            <TiDeleteOutline/>
+              <TiDeleteOutline/>
             </button>
 
           </div>

@@ -12,10 +12,13 @@ function BookList() {
     
   });
 
-  return <div className= "bg-gray-400 columns-3">
+  return <div className= "bg-gray-400 grid grid-cols-3">
 
     {renderBooks}
+
+    
     </div>;
+    
 }
 
 export default BookList;
