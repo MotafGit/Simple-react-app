@@ -25,8 +25,8 @@ function BookEdit({book, onEdit, onSubmit}) {
 
   return <form onSubmit={handleSubmit}>
       <label>Title</label>
-      <input value={title} onChange={handleChange}  />
-      <input value={genre} onChange={handleChangeGenre}  />
+      <input className="w-full border-2" value={title} onChange={handleChange}  />
+      <input className="w-full border-2" value={genre} onChange={handleChangeGenre}  />
 
 
       <Button square className ="bg-green-600">

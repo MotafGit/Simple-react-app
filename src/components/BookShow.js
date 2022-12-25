@@ -24,10 +24,11 @@ const {deleteBook} = useContext(BooksContext);
   };
 
   let content = book.title;
+
   if (showEdit){
     content = <BookEdit onSubmit= {handleSubmit} book={book} />;
   }
-
+  
 
   return (
     
