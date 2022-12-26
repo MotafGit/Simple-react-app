@@ -15,8 +15,6 @@ function BookCreate() {
   };
 
   const handleChangeGenre = (event) => {
-    console.log (event);
-    console.log ('3o', event.value);
     setGenre (event.value);
   };
 
@@ -34,12 +32,11 @@ function BookCreate() {
         <form onSubmit= {handleSubmit}>
           <div  className="mb-8 ml-3 ">Title 
           <input value ={title} onChange ={handleChange} />
-          <div><DropdownPage select={genre} onSelect={handleChangeGenre}  /></div>
-          <div> genre
+          <div><DropdownPage   onSelect={handleChangeGenre}  /></div>
 {/*              <input  value ={genre} onChange ={handleChangeGenre} />
  */}            
-          </div>
-          <Button primary>Create! </Button> </div>
+         
+          <Button primary  >Create! </Button> </div>
         </form>
       
           

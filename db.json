@@ -2,39 +2,47 @@
   "books": [
     {
       "title": "1",
+      "genre": "SCI-FI",
       "id": 1
     },
     {
       "title": "2",
+      "genre": "Fantasy",
       "id": 2
     },
     {
       "title": "3",
+      "genre": "SCI-FI",
       "id": 3
     },
     {
       "title": "4",
+      "genre": "Romance",
       "id": 4
     },
     {
       "title": "5",
+      "genre": "Fantasy",
       "id": 5
     },
     {
       "title": "6",
+      "genre": "Fantasy",
       "id": 6
     },
     {
-      "title": "1",
-      "genre": "1221",
+      "title": "7",
+      "genre": "Fantasy",
       "id": 7
     },
     {
-      "title": "2",
+      "title": "8",
+      "genre": "Fantasy",
       "id": 8
     },
     {
-      "title": "2",
+      "title": "9",
+      "genre": "Fantasy",
       "id": 9
     }
   ]

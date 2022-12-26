@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import BooksContext from "../context/books";
 import Button from "../Button";
 
-function BookEdit({book, onEdit, onSubmit}) {
+function BookEdit({book, onSubmit}) {
 
   const [title,setTitle] = useState(book.title);
   const [genre,setGenre] = useState(book.genre);

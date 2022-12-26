@@ -7,7 +7,9 @@ import { TiDeleteOutline } from "react-icons/ti";
 function BookShow({book}) {
 
 const [showEdit, setShowEdit] = useState(false);
-const {deleteBook} = useContext(BooksContext);
+
+  const {deleteBook} = useContext(BooksContext);
+
 
   const handleDeleteclick = () => {
     deleteBook(book.id);
@@ -15,16 +17,17 @@ const {deleteBook} = useContext(BooksContext);
 
   const handleEdit = () => {
     setShowEdit(!showEdit);
-
   };
 
   const handleSubmit = () => {
     setShowEdit(false);
-    
   };
 
-  let content = book.title;
 
+ 
+
+  
+  let content = book.title;
   if (showEdit){
     content = <BookEdit onSubmit= {handleSubmit} book={book} />;
   }
@@ -32,11 +35,14 @@ const {deleteBook} = useContext(BooksContext);
 
   return (
     
+
+    
     <div className ="container"  >
         <img className='max-w-full'
           alt ="books"
           src ={`https://picsum.photos/seed/${book.id}300/200`}
         />
+     
           <div className='text-center bg-yellow-100' >{content}</div>
           <div className = "topRight">
             <button  onClick = {handleEdit}>
@@ -45,13 +51,10 @@ const {deleteBook} = useContext(BooksContext);
             <button  onClick = {handleDeleteclick}>
               <TiDeleteOutline/>
             </button>
-
           </div>
-     
-
-     </div>);
-
-
+     </div>
+     );
+    
 
 }
 

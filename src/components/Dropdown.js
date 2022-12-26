@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { GoChevronDown } from 'react-icons/go';
 
 
-function Dropdown ({GenreOptions,onChange, selectGender}) {
+function Dropdown ({GenreOptions, selectGenre,onSelect}) {
     const [isOpen,setIsOpen] = useState(false);
 
     const handleClick = () => {
@@ -10,28 +11,30 @@ function Dropdown ({GenreOptions,onChange, selectGender}) {
 
     const handleGenreOption = (event) => {
         setIsOpen (false);
-        onChange (event);
-        
+        onSelect (event);
+
     }
 
     const renderGenreOptions = GenreOptions.map((option) => {
         return (
             <div onClick = {() => handleGenreOption(option)} key= {option.value}>
                 {option.label}
-                
             </div>
 
         );
     });
-    let content = 'Genre';
-    if (selectGender){
-        content = selectGender.label;
+    let content = 'Choose genre';
+    if (selectGenre){
+        content = selectGenre.label;
     }
-  
+
     return (
         <div>
-            <div onClick= {handleClick}>{content}</div>
-            {isOpen && <div> {renderGenreOptions}</div>}
+            <div className="flex justify-between items-center cursor-pointer border rounded p-1 shadow bg-green-300"
+                onClick= {handleClick}>
+                {content}
+            </div>
+            {isOpen && <div className=" top-full border rounded p-1 shadow bg-green-300 w-18"> {renderGenreOptions}</div>}
         </div>
     );
 

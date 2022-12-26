@@ -4,6 +4,7 @@ import BookList from './components/BookList';
 import BooksContext from './context/books';
 import FAQpage from './pages/FAQpage';
 import DropdownPage from './pages/DropdownPage';
+import Dropdown from './components/Dropdown';
 
 
 
@@ -23,7 +24,7 @@ function App() {
       <h4 className='ml-8 mb-3 mt-3'>FAQ</h4>
       <div className="grid grid-cols-3">
         <div className='ml-6'><FAQpage /></div>
-        <div className='ml-6'><DropdownPage/></div>
+        <div className='ml-6'>a decidir</div>
         <div>links</div>
       </div>
     </div>

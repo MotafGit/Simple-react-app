@@ -9,7 +9,6 @@ function FAQ ({drops}) {
 
     const handleClick = (verifyIndex) => {
         setExpanded ((current) => {
-            console.log ("clickou");
             if (current===verifyIndex){
                 return -1;
             } else {
