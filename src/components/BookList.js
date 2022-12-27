@@ -1,6 +1,7 @@
 import BookShow from "./BookShow";
 import BooksContext from "../context/books";
-import {useContext, useState} from 'react';
+import {useContext} from 'react';
+
 
 function BookList() {
   const {books} = useContext(BooksContext);
@@ -12,11 +13,10 @@ function BookList() {
     );
     
   });
-
   return (
     <div>
       
-      <div className= "bg-gray-400 grid grid-cols-3">
+       <div className= " grid grid-cols-3 bg-center bg-[url('https://cdn.dribbble.com/users/1104330/screenshots/3902777/media/5e7f2863179bd1f5524e7911601408f7.gif')]" > 
       {renderBooks} 
       </div>
     </div>

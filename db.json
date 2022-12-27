@@ -17,7 +17,7 @@
     },
     {
       "title": "4",
-      "genre": "Romance",
+      "genre": "Fantasy",
       "id": 4
     },
     {
@@ -32,17 +32,17 @@
     },
     {
       "title": "7",
-      "genre": "Fantasy",
+      "genre": "Romance",
       "id": 7
     },
     {
       "title": "8",
-      "genre": "Fantasy",
+      "genre": "Romance",
       "id": 8
     },
     {
       "title": "9",
-      "genre": "Fantasy",
+      "genre": "Romance",
       "id": 9
     }
   ]

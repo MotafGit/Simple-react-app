@@ -31,16 +31,14 @@ function BookCreate() {
         <h3 className="mb-3 ml-3 bg-green-600 w-24">insert a book:</h3>
         <form onSubmit= {handleSubmit}>
           <div  className="mb-8 ml-3 ">Title 
-          <input value ={title} onChange ={handleChange} />
-          <div><DropdownPage   onSelect={handleChangeGenre}  /></div>
-{/*              <input  value ={genre} onChange ={handleChangeGenre} />
- */}            
-         
-          <Button primary  >Create! </Button> </div>
-        </form>
-      
+            <input value ={title} onChange ={handleChange} />
+            <div className='flex'><DropdownPage   onSelect={handleChangeGenre}  /></div>
+  {/*              <input  value ={genre} onChange ={handleChangeGenre} />
+  */}            
           
-          
+            <Button primary className="flex flex-wrap" >Create! </Button> 
+          </div>
+        </form> 
       </div>
     
   );
