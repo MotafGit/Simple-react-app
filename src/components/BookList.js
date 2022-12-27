@@ -16,7 +16,7 @@ function BookList() {
   return (
     <div>
       
-       <div className= " grid grid-cols-3 bg-center bg-[url('https://cdn.dribbble.com/users/1104330/screenshots/3902777/media/5e7f2863179bd1f5524e7911601408f7.gif')]" > 
+       <div className= " grid grid-cols-3 justify-items-center bg-center bg-[url('https://cdn.dribbble.com/users/1104330/screenshots/3902777/media/5e7f2863179bd1f5524e7911601408f7.gif')]" > 
       {renderBooks} 
       </div>
     </div>

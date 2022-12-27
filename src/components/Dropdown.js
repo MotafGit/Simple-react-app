@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { GoChevronDown } from 'react-icons/go';
 
 
 function Dropdown ({GenreOptions, selectGenre,onSelect}) {
